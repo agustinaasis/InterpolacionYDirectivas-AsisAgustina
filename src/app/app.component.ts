@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clase-04-interpolacion-y-directivas';
-
 }
