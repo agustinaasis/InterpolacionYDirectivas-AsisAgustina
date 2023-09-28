@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ListaDeAlumnosComponent {
 
+  estudiantes = [
+    new alumnos (1, 'Carlos', 'Martinez', 10.05),
+    new alumnos (2, 'Sandra', 'Ibañez', 12.06),
+    new alumnos (3, 'Manuel', 'Suarez', 17.03),
+    new alumnos (4, 'Irene', 'Sandoval', 11.08),
+    new alumnos (5, 'Cecilia', 'Miró', 14.04),
+  ]
+
 }
 
 class alumnos {
@@ -16,7 +24,7 @@ class alumnos {
   fecha:number;
 
 
-  constructor(id:number, nombre:string, apellido:string, fecha:number) {
+  constructor (id:number, nombre:string, apellido:string, fecha:number) {
     this.id = id;
     this.nombre = nombre;
     this.apellido = apellido;
@@ -24,9 +32,3 @@ class alumnos {
   }
 }
 
-
-  const alumno1 = new alumnos (1, 'Carlos', 'Martinez', 10.05);
-  const alumno2 = new alumnos (2, 'Sandra', 'Ibañez', 12.06);
-  const alumno3 = new alumnos (3, 'Manuel', 'Suarez', 17.03);
-  const alumno4 = new alumnos (4, 'Irene', 'Sandoval', 11.08);
-  const alumno5 = new alumnos (5, 'Cecilia', 'Miró', 14.04);

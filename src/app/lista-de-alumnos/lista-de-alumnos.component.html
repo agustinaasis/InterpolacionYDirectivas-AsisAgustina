@@ -1,12 +1,31 @@
-<div class="container listaContainer"> 
-    <ul>
-        <li *ngFor = "let alumno1 for alumnos">{{alumno1}}</li>
-        <li *ngFor = "let alumno2 for alumnos">{{alumno2}}</li>
-        <li *ngFor = "let alumno3 for alumnos">{{alumno3}}</li>
-        <li *ngFor = "let alumno4 for alumnos">{{alumno4}}</li>
-        <li *ngFor = "let alumno5 for alumnos">{{alumno5}}</li>
+<h1 class="text-center"[style.font-size]="'1.2em'" [style.padding]="'10px'" [style.background]="' rgb(236, 230, 210)'"  >Listado de alumnos</h1>
 
-    </ul>
+
+
+
+<div class="row descrpcionTabla">
+    <div class="col"><p>Nombre</p></div>
+    <div class="col"><p>Apellido</p></div>
+    <div class="col"><p>Fecha de inscripción</p></div>
+</div>
+
+<div class="container text-center listaEstudiantes" *ngFor="let estudiante of estudiantes">
+
+        <div class="row">
+
+            <div class="col">
+                {{estudiante.nombre}}
+            </div>
+
+            <div class="col">
+                {{estudiante.apellido}}
+            </div>
+            
+            <div class="col">
+                {{estudiante.fecha | date: 'M/d/y'}}
+            </div>
+
+        </div>
 
 </div>
 
